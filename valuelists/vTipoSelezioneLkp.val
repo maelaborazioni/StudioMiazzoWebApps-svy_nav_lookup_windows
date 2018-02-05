@@ -1,0 +1,9 @@
+addEmptyValue:1,
+customValues:"Tutti | 0\r
+Solo selezionati | 1\r
+Non selezionati | 2",
+name:"vTipoSelezioneLkp",
+returnDataProviders:1,
+showDataProviders:1,
+typeid:34,
+uuid:"65DD1F8E-29E1-414C-975A-C6121644BE5E"
