@@ -413,7 +413,7 @@ function svy_nav_showLookupWindow(
 		var _rec_pf = _fs_fields.getRecord(j)
 		
 		var _field_width = _w_field
-		if(_rec_pf.field_width)
+		if(_rec_pf.field_width != null)
 		{
 			_field_width = _rec_pf.field_width
 		}
