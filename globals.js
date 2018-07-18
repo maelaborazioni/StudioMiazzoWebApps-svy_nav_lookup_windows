@@ -185,7 +185,7 @@ function svy_nav_showLookupWindow(
 	
 	//create a form with the right fields on it
 	// MAVariazione - duplicate the foundset so to not modify what's defined in the lkp program
-	/** @type {JSFoundset<db:/svy_framework/nav_program_fields>} */
+	/** @type {JSFoundSet<db:/svy_framework/nav_program_fields>} */
 	var _fs_fields = databaseManager.getFoundSet(globals.nav_db_framework,'nav_program_fields').duplicateFoundSet()
 	_fs_fields.addFoundSetFilterParam('program_name','=',_program)
 	_fs_fields.addFoundSetFilterParam('flag_lookup_field','=',1)
@@ -831,7 +831,7 @@ function svy_nav_lkp_showRecord_new(_foundset, _program, _newRecord, _lkpWidth, 
 }
 
 /**
- * @param {JSFoundset<db:/svy_framework/nav_program_fields>} _fs_fields
+ * @param {JSFoundSet<db:/svy_framework/nav_program_fields>} _fs_fields
  * 
  * @return {Array}
  *
