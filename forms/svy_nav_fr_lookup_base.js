@@ -275,8 +275,9 @@ function checkRecords(event, checked, form)
 	{
 		var record = fs.getRecord(r);
 		// needed for successful storing of the calculation (see https://support.servoy.com/browse/SVY-7095)
-		var temp  = record['checked_lkp'];
-		
+		var temp = null;
+		if(temp == null)
+		   temp = record['checked_lkp'];
 		record['checked_lkp'] = record['unselectable_calc'] ? record['checked_lkp'] : (!record['disabled_calc'] && checked);
 	}
 }
